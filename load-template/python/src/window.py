@@ -2,7 +2,9 @@ from gi.repository import Gtk, Adw
 
 @Gtk.Template(resource_path="/org/gtk/Example/window.ui")
 class Window(Adw.ApplicationWindow):
+    # `__gtype_name__` needs to match `class` attribute of the template tag
     __gtype_name__ = "Window"
+    # referring to a GtkButton with the `id` "button"
     button = Gtk.Template.Child()
 
     def __init__(self, **kwargs):
