@@ -1,2 +1,5 @@
 #!/bin/sh
-glib-compile-resources src/gresources.xml
+glib-compile-resources \
+    --sourcedir=src \
+    src/gresources.xml \
+    --target=gresources.gresource

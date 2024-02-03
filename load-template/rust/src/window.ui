@@ -16,7 +16,7 @@
             <property name="margin-start">12</property>
             <property name="margin-end">12</property>
             <child>
-              <object class="GtkButton">
+              <object class="GtkButton" id="button">
                 <property name="label">Click me</property>
                 <style>
                   <class name="suggested-action"/>
